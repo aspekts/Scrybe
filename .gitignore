@@ -1,2 +1,9 @@
 node_modules/
 yarn.lock
+uploads/
+serviceacc.json
+.env
+*.css*
+!style.css
+*.js*
+!script.js

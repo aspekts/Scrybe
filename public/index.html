@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <head>
     <title>Scrybe - Transcribe Text From Images</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="container-fluid">
+        <h1 align="center">Scrybe - Transcribe Text From Images</h1> <br><br><br>
+    <div id="pics">
     <form method="POST" action="/profile-upload-single" enctype="multipart/form-data">
         <div>
-            <label>Upload profile picture</label>
+            <label>Upload Picture to Transcribe</label><br><br>
             <input type="file" name="profile-file" required/>
         </div>
         <div>
-            <input type="submit" value="Upload" />
+            <input  type="submit" value="Upload" /><br><br><br>
         </div>
     </form>
 
-    <hr>
-
+    </div>
+    <div id="pics">
     <form method="POST" action="/profile-upload-multiple" enctype="multipart/form-data">
         <div>
-            <label>Upload multiple profile picture</label>
+            <label>Upload multiple profile picture</label><br>
             <input type="file" name="profile-files" required multiple  />
         </div>
         <div>
             <input type="submit" value="Upload" />
         </div>
     </form>
+    </div>
+    </div>
 </body>
 </html>
